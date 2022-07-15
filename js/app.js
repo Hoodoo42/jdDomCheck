@@ -37,3 +37,9 @@ let h4Id = document.getElementById(`another`);
 h4Id[`style`][`color`] = `red`;
 h4Id[`style`][`background`] = `black`;
 h4Id[`style`][`fontFamily`] = `monospace`;
+
+
+// grabbing the image by its id with this variable and getElement function
+let image = document.getElementById(`picture`);
+// overwritting the first image with another one using setAttribute (built in function) and chagning the image src
+image.setAttribute(`src`, `https://unsplash.com/photos/7QGrloNqx6w`);
