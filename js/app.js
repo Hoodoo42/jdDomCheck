@@ -10,3 +10,12 @@ let oneClass = document.querySelectorAll(`.text`);
 for(let i=0; i<oneClass.length; i++){
     oneClass[i][`innerText`] = `Grabbed by my class!`
 }
+
+
+let moreInfo =document.getElementById(`moreInfo`);
+moreInfo[`innerText`] = `Get more information here!`
+
+let find= document.getElementsByClassName(`find`);
+for(let i=0; i<find.length; i++){
+    find[i][`innerText`] = `Grabbed by my class, differently!`
+}
