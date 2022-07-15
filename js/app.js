@@ -11,11 +11,29 @@ for(let i=0; i<oneClass.length; i++){
     oneClass[i][`innerText`] = `Grabbed by my class!`
 }
 
-
+// creating a variable to access a specific element by its ID
 let moreInfo =document.getElementById(`moreInfo`);
+// grabbing that element through the variable and changing its innerText
 moreInfo[`innerText`] = `Get more information here!`
 
+// creating a variable to access multiple elements by their shared class
 let find= document.getElementsByClassName(`find`);
+// using the for loop to step through and change each element one by one
 for(let i=0; i<find.length; i++){
     find[i][`innerText`] = `Grabbed by my class, differently!`
 }
+
+
+// creating a variable to access the tag selected by its ID
+let footerId = document.getElementById(`footerInfo`);
+footerId[`innerHTML`] = `Footer Info Here`;
+// adding a new p tag before the tag selected with getElementById
+footerId[`outerHTML`] = '<p>I am before!</p>' + footerId[`outerHTML`] + `<h3>I am after!</h3>`;
+
+
+// selecting an h4 tag by its id
+let h4Id = document.getElementById(`another`);
+// using the variable object to sort through different css selectors to change styling the h4
+h4Id[`style`][`color`] = `red`;
+h4Id[`style`][`background`] = `black`;
+h4Id[`style`][`fontFamily`] = `monospace`;
